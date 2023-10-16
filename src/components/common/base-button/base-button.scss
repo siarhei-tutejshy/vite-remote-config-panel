@@ -1,0 +1,19 @@
+.base-button {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  color: var(--vt-c-text-dark-2);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover:not(.active) {
+    background: hsla(160, 100%, 37%, 0.2);
+  }
+
+  &.active {
+    background: var(--color-background-active);
+    color: var(--vt-c-text-light-1)
+  }
+}
+

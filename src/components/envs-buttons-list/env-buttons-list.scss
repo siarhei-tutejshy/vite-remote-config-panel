@@ -1,0 +1,10 @@
+@import "../../styles/mixins";
+
+.env-buttons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  .env-buttons-list__title {
+    @include title-text;
+  }
+}

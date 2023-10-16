@@ -1,0 +1,37 @@
+@import "./styles/mixins";
+
+.app-header {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+
+  .app-header__title {
+    @include title-text;
+    margin-bottom: 30px;
+  }
+}
+
+.main-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .main-app__fields {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: auto;
+
+    .main-app__block {
+      border: 1px solid var(--color-border);
+      padding: 20px;
+      border-radius: 20px;
+    }
+  }
+}
+
+.actived {
+  background-color: #2c3e50;
+  color: #f2f2f2;
+}
